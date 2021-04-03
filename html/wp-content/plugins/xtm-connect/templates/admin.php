@@ -1,0 +1,1 @@
+<h1>Plugin page</h1>

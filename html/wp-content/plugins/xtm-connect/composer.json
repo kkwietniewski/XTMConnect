@@ -1,0 +1,24 @@
+{
+    "name": "kacper/xtm-connect",
+    "description": "This is the recruitment task plugin.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Kacper Kwietniewski",
+            "email": "kwietniewski.kacperr@gmail.com"
+        }
+    ],
+    "require": {},
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc"
+        },
+        "classmap": [
+            "inc/"
+        ]
+    }
+}
