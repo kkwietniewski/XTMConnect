@@ -348,3 +348,32 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Created by https://www.toptal.com/developers/gitignore/api/wordpress
+# Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
+
+### WordPress ###
+# ignore everything in the root except the "wp-content" directory.
+html/*
+!html/wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+html/wp-content/*
+!html/wp-content/mu-plugins/
+!html/wp-content/plugins/
+!html/wp-content/themes/
+
+# ignore these plugins
+html/wp-content/plugins/hello.php
+
+# ignore specific themes
+html/wp-content/themes/twenty*/
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
