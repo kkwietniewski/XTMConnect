@@ -355,6 +355,8 @@ MigrationBackup/
 ### WordPress ###
 # ignore everything in the root except the "wp-content" directory.
 html/*
+!html/wp-load.php
+!html/wp-settings.php
 !html/wp-content/
 
 # ignore everything in the "wp-content" directory, except:
@@ -377,6 +379,3 @@ node_modules/
 *.log
 *.sql
 *.sqlite
-
-# ignore vendor
-html/wp-content/plugins/xtm-connect/vendor/
