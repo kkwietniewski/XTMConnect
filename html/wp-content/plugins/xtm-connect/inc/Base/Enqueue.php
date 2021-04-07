@@ -8,7 +8,7 @@
 
 namespace Inc\Base;
 
-class Enqueue extends BaseController
+class Enqueue
 {
 
     public function register()
@@ -18,7 +18,7 @@ class Enqueue extends BaseController
 
     function enqueue()
     {
-        wp_enqueue_style('xtmpluginstyle',$this->pluginUrl . 'assets/xtm-style.css', __FILE__ );
-        wp_enqueue_script('xtmpluginscripts',$this->pluginUrl .  'assets/xtm-scripts.js', __FILE__ );
+        wp_enqueue_style('xtmpluginstyle',plugin_dir_url( dirname( __FILE__, 2 ) ) . 'assets/xtm-style.css', __FILE__ );
+        wp_enqueue_script('xtmpluginscripts',plugin_dir_url( dirname( __FILE__, 2 ) ) .  'assets/xtm-scripts.js', __FILE__ );
     }
 }

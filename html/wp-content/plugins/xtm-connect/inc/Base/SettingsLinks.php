@@ -8,7 +8,7 @@
 
 namespace Inc\Base;
 
-class SettingsLinks extends BaseController
+class SettingsLinks
 {
     
     public function register()
@@ -18,7 +18,7 @@ class SettingsLinks extends BaseController
 
     public function settings_link( $links ) 
     {
-        $settings_link = '<a href="admin.php?page=xtm_connect">Settings</a>';
+        $settings_link = '<a href="edit.php?post_type=xtm_post">Settings</a>';
         array_push( $links, $settings_link );
         return $links;
     }

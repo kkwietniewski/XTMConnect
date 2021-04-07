@@ -14,9 +14,12 @@ final class Init
     public static function get_services()
     {
         return[
-            // Pages\Admin::class,
+            Base\TranslationsDB::class,
+            Pages\Translation::class,
+            Base\SettingsLinks::class,
+            Base\ColumnStatus::class,
             Base\Enqueue::class,
-            Base\SettingsLinks::class
+            Base\BulkAction::class
         ];
     }
 
